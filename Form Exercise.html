@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Exercise</title>
+</head>
+<body>
+	<h1>Register</h1>
+
+	<form>
+		<div>
+			<label for="FirstName">First Name:</label>
+			<input type="text" name="FirstName" id="FirstName" placeholder="John" required>
+			<label for="LastName">Last Name:</label>
+			<input type="text" name="LastName" id="LastName" placeholder="Smith" required>
+		</div>
+
+		<div>
+			<label for="male">Male</label>
+			<input type="radio" name="gender" id="male" value="Male">
+			<label for="female">Female</label>
+			<input type="radio" name="gender" id="female" value="Female">
+			<label for="other">Other</label>
+			<input type="radio" name="gender" id="other" value="Other">
+		</div>
+
+		<div>
+			<label for="email">Email:</label>
+			<input type="email" name="email" id="email" placeholder="your email" required>
+			<label for="password">Password:</label>
+			<input type="password" name="password" id="password" pattern=".{5,10}" title="5 to 10 characters" placeholder="your password" required>
+		</div>
+
+		<div>
+			<label for="birthday">Birthday:</label>
+			<select name="birthdayMonth" id="month">
+				<option value="0" selected disabled>Month</option>
+				<option value="01">Jan</option>
+				<option value="02">Feb</option>
+				<option value="03">Mar</option>
+				<option value="04">Apr</option>
+			</select>
+			<select name="birthdayDay" id="day">
+				<option value="0" selected disabled>Day</option>
+				<option value="01">01</option>
+				<option value="02">02</option>
+				<option value="03">03</option>
+				<option value="04">04</option>
+			</select>
+			<select name="birthdayYear" id="year">
+				<option value="0" selected disabled>Year</option>
+				<option value="1990">1991</option>
+				<option value="1991">1992</option>
+				<option value="1992">1993</option>
+				<option value="1993">1994</option>
+			</select>
+		</div>
+
+		<div>
+			<label for="agree">I agree to the terms and conditions</label>
+			<input type="checkbox" name="agree" id="agree" required>
+		</div>
+
+		<div>
+			<input type="submit" name="submit" value="Submit">
+		</div>
+		
+	</form>
+
+</body>
+</html>
