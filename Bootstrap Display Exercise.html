@@ -1,0 +1,56 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<title>The Display exercise</title>
+		<!-- bootstrap 4.3.1 -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		
+		<!-- font awesome -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+		<style type="text/css">
+			img{
+				width: 70%;
+			}
+		</style>
+	</head>
+	<body>
+		
+		
+		<div class="container">
+			<!-- show the screen size status-->
+			<h1 class="d-xs-block d-sm-none">Now is on xs</h1>
+			<h1 class="d-none d-sm-block d-md-none">Now is on sm</h1>
+			<h1 class="d-none d-md-block d-lg-none">Now is on md</h1>
+			<h1 class="d-none d-lg-block d-xl-none">Now is on lg</h1>
+			<h1 class="d-none d-xl-block">Now is on xl</h1>
+			
+			<h3>Hidden on one specific size:</h3>
+			<div class="row">
+				<div class="alert alert-primary col-4 d-none d-sm-block" role="alert">
+			 		Hidden only on <b>xs</b>
+				</div>
+				<div class="alert alert-success col-4 d-md-none d-lg-block" role="alert">
+			  		Hidden only on <b>md</b>
+				</div>
+				<div class="alert alert-danger col-4 d-xl-none" role="alert">
+			  		Hidden only on <b>xl</b>
+				</div>
+			</div>
+
+			<h3>Display on different size:</h3>
+			<div class="row">
+				<div class="alert alert-primary col-4 d-sm-none d-xl-block" role="alert">
+			 		Visible only on <b>xl xs</b>
+				</div>
+				<div class="alert alert-success col-4 d-sm-none d-md-block d-xl-block" role="alert">
+			  		Visible only on <b>xl md xs</b>
+				</div>
+				<div class="alert alert-danger col-4 d-sm-none d-md-block d-lg-block d-xl-block" role="alert">
+			  		Visible only on <b>xl lg md</b>
+				</div>
+			</div>
+			
+		</div>
+	</body>
+</html>
